@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
+    namespace 'com.nordan.sampleapp'
 
     defaultConfig {
         minSdkVersion 24
@@ -26,7 +27,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation "com.github.skydoves:colorpickerpreference:2.0.0"
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.29'
     implementation 'com.google.android.material:material:1.2.1'
     implementation project(path: ':app')
     compileOnly 'org.projectlombok:lombok:1.18.16'
